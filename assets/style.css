@@ -1,0 +1,49 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+img{
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    border-radius: 60px;}
+.fixtureContainer {
+  width: 1515px;
+  border-style: solid;
+  bottom: 2px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+.fixtureContainer2 {
+    width: 1515px;
+    border-style: solid;
+    bottom: 2px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+  
+.firstRound {
+  margin-right: 120px;
+  font-size: 24px;
+}
+.winner {
+  margin-right: 110px;
+  font-size: 24px;
+}
+.looser {
+  font-size: 24px;
+}
+section {
+  background: #000;
+}
+.championshipTitle {
+  margin-right: auto;
+  align-items: center;
+}
+
