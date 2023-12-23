@@ -1,15 +1,23 @@
-header{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+body{
+  counter-reset: headerCounter;
 
 }
-img{
-    height: 100px;
-    width: 100px;
-    border: solid black;
-    border-radius: 60px;}
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+ol,
+li {
+  list-style: none;
+}
+img {
+  height: 100px;
+  width: 100px;
+  border: solid black;
+  border-radius: 60px;
+}
 .fixtureContainer {
   width: 1515px;
   border-style: solid;
@@ -19,25 +27,31 @@ img{
   margin-top: 50px;
 }
 .fixtureContainer2 {
-    width: 1515px;
-    border-style: solid;
-    bottom: 2px;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 50px;
-    justify-content: center;
+  width: 1515px;
+  border-style: solid;
+  bottom: 2px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+  justify-content: center;
 }
-  
+
 .firstRound {
-  margin-right: 120px;
-  font-size: 24px;
+  width: 500px;
+  border: solid 2px black;
 }
 .winner {
-  margin-right: 110px;
+  margin: 55px;
   font-size: 24px;
+  border: solid 2px black;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .looser {
   font-size: 24px;
+  border: solid 2px black;
+  display: flex;
+  flex-wrap: nowrap;
 }
 section {
   background: #000;
@@ -45,5 +59,17 @@ section {
 .championshipTitle {
   margin-right: auto;
   align-items: center;
+}
+.formli {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 2px 10px 2px 10px;
+  counter-increment: headerCounter;
+
+}
+.formli::before{
+  content: counter(headerCounter)'.';
+
 }
 
