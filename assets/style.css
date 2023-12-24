@@ -1,75 +1,80 @@
-body{
+/* body {
   counter-reset: headerCounter;
 
-}
+} */
+
 header {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
+
 ol,
 li {
   list-style: none;
 }
+
 img {
   height: 100px;
   width: 100px;
   border: solid black;
   border-radius: 60px;
 }
+
 .fixtureContainer {
-  width: 1515px;
   border-style: solid;
   bottom: 2px;
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 50px;
-}
-.fixtureContainer2 {
-  width: 1515px;
-  border-style: solid;
-  bottom: 2px;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 50px;
-  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
+
 .firstRound {
-  width: 500px;
-  border: solid 2px black;
+  width: 33%;
+
+  border: solid 1px black;
 }
+
 .winner {
   margin: 55px;
-  font-size: 24px;
+  font-size: 22px;
   border: solid 2px black;
   display: flex;
   flex-wrap: nowrap;
 }
+
 .looser {
   font-size: 24px;
   border: solid 2px black;
   display: flex;
   flex-wrap: nowrap;
 }
+
 section {
   background: #000;
 }
+
 .championshipTitle {
   margin-right: auto;
   align-items: center;
 }
+
 .formli {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 2px 10px 2px 10px;
-  counter-increment: headerCounter;
+  /* counter-increment: headerCounter; */
 
 }
-.formli::before{
+
+/* .formli::before {
   content: counter(headerCounter)'.';
 
-}
-
+} */
